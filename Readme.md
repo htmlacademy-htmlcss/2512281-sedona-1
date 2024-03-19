@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Adelia](https://up.htmlacademy.ru/htmlcss-individual/1/user/2512281).
-* Наставник: [Артем Картавый](https://htmlacademy.ru/profile/artem_k).
+* Наставник: [Артем К](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
