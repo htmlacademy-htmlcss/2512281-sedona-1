@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+
+    <header class="main-header">
+      <nav>
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Главная</a></li>
+          <li><a href="about.html">О Седоне</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+        <div>
+          <div>
+            <img src="icons/serch">
+            <img src="icons/heart">
+            <span class="sup-favotite-count">11</span>
+          </div>
+          <button>Хочу сюда!</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="catalog-filter">
+        <div>
+        <h1>Гостиницы седоны</h1>
+        <p><img src=house.png"> > Гостиницы</p>
+      </div>
+      <div>
+        <div class="catalog-filter-left">
+          <div>
+            <h2>Инфраструктура:</h2>
+            <ul>
+              <li><checkbox aria-checked="true">Бассейн</checkbox></li>
+              <li><checkbox aria-checked="true">Пакковка</checkbox></li>
+              <li><checkbox aria-checked="false">Wi-Fi</checkbox></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Тип жилья:</h2>
+            <ul>
+              <li><radiobutton checked="true">Гостиница</radiobutton></li>
+              <li><radiobutton>Мотель</radiobutton></li>
+              <li><radiobutton>Апартаменты</radiobutton></li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-filter-right">
+          <div class="catalog-filter-price">
+            <h2>Стоимость, Р:</h2>
+            <p><input value="0">
+            <input value="9000">
+          </p>
+          <!--polzunok-->
+          </div>
+          <div class="filter-buttons">
+            <button onclick="serch()" class="search-button">Применить</button>
+            <button onclick="clear()" class="clear-filters-button">Сбросить</button>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+      <section>
+        <div class="catalog-sorting">
+          <h2>Найдено гостиниц: {{hotel_count}}</h2>
+          <div>
+            <select>
+              <option >Сначала дешевые</option >
+              <option >Сначала дорогие</option >
+            </select>
+            <img src="view-tab.png" class="catalog-vie-selected">
+            <img src="view-card.png">
+            <img src="view-list.png">
+          </div>
+        </div>
+        <div class="catalog-body">
+          <div class="catalog-item">
+            <img>
+            <h4>Amara Resort & Spa</h4>
+            <p>
+              <p>Hotel</p>
+              <p>4000 rub</p>
+              <button class="hotel-details">Подробнее</button>
+              <button class="hotel-to-fav">В избранное</button>
+              <span class="hotel-stars">****</span>
+              <span class="hotel-raiting">Рейтинг 8,5</span>
+            </p>
+          </div>
+        </div>
+        <img src="divider-6.png">
+        <div class="catalog-pages">
+          <ul>
+            <li>{{index}}</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section>
+        <h2>Подпишись на рассылку</h2>
+        <p>Только полезная информация и никакого спама<br>Чесное бойскаутское!</p>
+        <form action="#" type="post">
+          <input type="email">
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul>
+        <li><a href="vk.com"><img alt="vk"></a></li>
+        <li><a href="telegram.org"><img alt="telegram"></a></li>
+        <li><a href="youtube.com"><img alt="youtube"></a></li>
+      </ul>
+      <div class="phone-number-fiooter">+7 (912) 812-12-12</div>
+      <div>
+        <img src="img/html-academy-logo.svg" width="170" height="70" alt="Логотип сайта команды разработки сайта">
+      </div>
+
+    </footer>
+  </body>
+</html>
