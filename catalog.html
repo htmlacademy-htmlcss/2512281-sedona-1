@@ -2,30 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="/styles/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+    <style>
+      .catalog-filter{
+        background-image: url("images/catalog_back.jpg");
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
     <header class="main-header">
       <nav>
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
+        <a class="main-header-logo" href="index.html">
+          <img src="images/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Главная</a></li>
-          <li><a href="about.html">О Седоне</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
         </ul>
-        <div>
-          <div>
-            <img src="icons/serch">
-            <img src="icons/heart">
-            <span class="sup-favotite-count">11</span>
-          </div>
-          <button>Хочу сюда!</button>
-        </div>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img src="icons/heart" alt="Понравившиеся гостиницы">
+              <span class="sup-fav-count">11</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <button class="header-brown-btn">Хочу сюда</button>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -33,7 +47,7 @@
       <section class="catalog-filter">
         <div>
         <h1>Гостиницы седоны</h1>
-        <p><img src=house.png"> > Гостиницы</p>
+        <p><img src="images/home.svg"> > Гостиницы</p>
       </div>
       <div>
         <div class="catalog-filter-left">
@@ -79,14 +93,14 @@
               <option >Сначала дешевые</option >
               <option >Сначала дорогие</option >
             </select>
-            <img src="view-tab.png" class="catalog-vie-selected">
-            <img src="view-card.png">
-            <img src="view-list.png">
+            <img src="images/view-tab.svg" class="catalog-view-selected">
+            <img src="images/view-card.svg">
+            <img src="images/view-list.svg">
           </div>
         </div>
         <div class="catalog-body">
           <div class="catalog-item">
-            <img>
+            <img src="images/catalog/hotel-1.jpg">
             <h4>Amara Resort & Spa</h4>
             <p>
               <p>Hotel</p>
@@ -97,6 +111,43 @@
               <span class="hotel-raiting">Рейтинг 8,5</span>
             </p>
           </div>
+          <div class="catalog-item">
+            <img src="images/catalog/hotel-2.jpg">
+            <h4>Amara Resort & Spa</h4>
+            <p>
+              <p>Hotel</p>
+              <p>4000 rub</p>
+              <button class="hotel-details">Подробнее</button>
+              <button class="hotel-to-fav">В избранное</button>
+              <span class="hotel-stars">****</span>
+              <span class="hotel-raiting">Рейтинг 8,5</span>
+            </p>
+          </div>
+          <div class="catalog-item">
+            <img src="images/catalog/hotel-3.jpg">
+            <h4>Amara Resort & Spa</h4>
+            <p>
+              <p>Hotel</p>
+              <p>4000 rub</p>
+              <button class="hotel-details">Подробнее</button>
+              <button class="hotel-to-fav">В избранное</button>
+              <span class="hotel-stars">****</span>
+              <span class="hotel-raiting">Рейтинг 8,5</span>
+            </p>
+          </div>
+          <div class="catalog-item">
+            <img src="images/catalog/hotel-4.jpg">
+            <h4>Amara Resort & Spa</h4>
+            <p>
+              <p>Hotel</p>
+              <p>4000 rub</p>
+              <button class="hotel-details">Подробнее</button>
+              <button class="hotel-to-fav">В избранное</button>
+              <span class="hotel-stars">****</span>
+              <span class="hotel-raiting">Рейтинг 8,5</span>
+            </p>
+          </div>
+
         </div>
         <img src="divider-6.png">
         <div class="catalog-pages">
@@ -107,7 +158,7 @@
       </section>
 
 
-      <section>
+      <section class="subscribe-section">
         <h2>Подпишись на рассылку</h2>
         <p>Только полезная информация и никакого спама<br>Чесное бойскаутское!</p>
         <form action="#" type="post">
@@ -118,13 +169,13 @@
     </main>
     <footer class="main-footer">
       <ul>
-        <li><a href="vk.com"><img alt="vk"></a></li>
-        <li><a href="telegram.org"><img alt="telegram"></a></li>
-        <li><a href="youtube.com"><img alt="youtube"></a></li>
+        <li><a href="vk.com"><img alt="vk" src="images/vk-icon.svg"></a></li>
+        <li><a href="telegram.org"><img alt="telegram" src="images/telegam-icon.svg"></a></li>
+        <li><a href="youtube.com"><img alt="youtube" src="images/youtube-icon.svg"></a></li>
       </ul>
       <div class="phone-number-fiooter">+7 (912) 812-12-12</div>
       <div>
-        <img src="img/html-academy-logo.svg" width="170" height="70" alt="Логотип сайта команды разработки сайта">
+        <img src="images/HTMLAcademy.svg" width="170" height="70" alt="Логотип сайта команды разработки сайта">
       </div>
 
     </footer>
