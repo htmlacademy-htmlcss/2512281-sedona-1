@@ -9,12 +9,52 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
-  .catalog-filter{
-    background-image: url("../images/catalog_back.jpg");
-    background-repeat: no-repeat;
-  }
-  .subscribe-section{
-    background-image: url("../images/subscribe_back.jpg");
-    background-repeat: no-repeat;
-  }
+}
+.catalog-filter{
+  background-image: url("../images/catalog-back.jpg");
+  background-repeat: no-repeat;
+}
+.subscribe-section{
+  background-image: url("../images/subscribe-back.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-content{
+  background-image: url("../Training_css/images/index-background.jpg");
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 565px;
+}
+.main-content>.welcome{
+  padding: 26px;
+}
+.welcome-header{
+  background-image: url("../Training_css/images/divider.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  padding-top: 80px;
+}
+.nav-search{
+  background-image: url("/images/icons/search.svg");
+}
+.nav-favorite{
+  background-image: url("/images/icons/heart.svg");
+}
+#sedona-advantages .house{
+  background-image: url('/images/advantage-icon/house.svg');
+}
+#sedona-advantages .food{
+  background-image: url('/images/advantage-icon/food.svg');
+}
+#sedona-advantages .present{
+  background-image: url('/images/advantage-icon/present.svg');
+}
+.main-footer .vk{
+  background-image: url('/images/vk-icon.svg');
+}
+.main-footer .telegram{
+  background-image: url('/images/telegam-icon.svg');
+}
+.main-footer .youtube{
+  background-image: url('/images/youtube-icon.svg');
+}
