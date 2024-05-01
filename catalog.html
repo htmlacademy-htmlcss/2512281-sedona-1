@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="/styles/style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="fonts/ptsans-400.woff2" rel="stylesheet">
     <title>HTML Academy: Седона</title>
     <style>
     </style>
@@ -25,15 +26,12 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <img src="icons/heart" alt="Понравившиеся гостиницы">
-              <span class="sup-fav-count">11</span>
+            <a class="navigation-link nav-favorite" href="#">
+              <span class="badge-favorite-count">11</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <button class="header-brown-btn">Хочу сюда</button>
-            </a>
+            <a class="navigation-link header-brown-btn" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -84,72 +82,79 @@
 
       <section>
         <div class="catalog-sorting">
-          <h2>Найдено гостиниц: {{hotel_count}}</h2>
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <p>Найдено гостиниц: 38</p>
           <div>
             <select>
               <option >Сначала дешевые</option >
               <option >Сначала дорогие</option >
             </select>
-            <button class="btn-view btn-view-tab catalog-view-selected" title="Таблица"></button>
-            <button class="btn-view btn-view-card" title="Карточки"></button>
-            <button class="btn-view btn-view-list" title="Список"></button>
+            <ul>
+              <li><button type="button" class="btn-view btn-view-tab catalog-view-selected" title="Таблица" type="button"></button></li>
+              <li><button type="button" class="btn-view btn-view-card" title="Карточки" type="button"></button></li>
+              <li><button type="button" class="btn-view btn-view-list" title="Список" type="button"></button></li>
+            </ul>
           </div>
         </div>
         <div class="catalog-body">
           <div class="catalog-item">
-            <img src="images/catalog/hotel-1.jpg">
+            <img src="images/catalog/hotel-1.jpg" alt="" width="400px" height="400px">
             <h4>Amara Resort & Spa</h4>
             <p>
               <span>Hotel</span>
               <p>4000 rub</p>
               <a class="hotel-details" href="#">Подробнее</a>
-              <button class="hotel-to-fav">В избранное</button>
+              <button class="hotel-to-fav" type="button">В избранное</button>
               <span class="hotel-stars">****</span>
               <span class="hotel-raiting">Рейтинг 8,5</span>
             </p>
           </div>
           <div class="catalog-item">
-            <img src="images/catalog/hotel-2.jpg">
+            <img src="images/catalog/hotel-2.jpg" alt="" width="400px" height="400px">
             <h4>Amara Resort & Spa</h4>
             <p>
               <span>Hotel</span>
               <p>4000 rub</p>
               <a class="hotel-details" href="#">Подробнее</a>
-              <button class="hotel-to-fav">В избранное</button>
+              <button class="hotel-to-fav" type="button">В избранное</button>
               <span class="hotel-stars">****</span>
               <span class="hotel-raiting">Рейтинг 8,5</span>
             </p>
           </div>
           <div class="catalog-item">
-            <img src="images/catalog/hotel-3.jpg">
+            <img src="images/catalog/hotel-3.jpg" alt="" width="400px" height="400px">
             <h4>Amara Resort & Spa</h4>
             <p>
               <span>Hotel</span>
               <p>4000 rub</p>
               <a class="hotel-details" href="#">Подробнее</a>
-              <button class="hotel-to-fav">В избранное</button>
+              <button class="hotel-to-fav" type="button">В избранное</button>
               <span class="hotel-stars">****</span>
               <span class="hotel-raiting">Рейтинг 8,5</span>
             </p>
           </div>
           <div class="catalog-item">
-            <img src="images/catalog/hotel-4.jpg">
+            <img src="images/catalog/hotel-4.jpg" alt="" width="400px" height="400px">
             <h4>Amara Resort & Spa</h4>
             <p>
               <span>Hotel</span>
               <p>4000 rub</p>
               <a class="hotel-details" href="#">Подробнее</a>
-              <button class="hotel-to-fav" type="submit">В избранное</button>
+              <button class="hotel-to-fav" type="button">В избранное</button>
               <span class="hotel-stars">****</span>
               <span class="hotel-raiting">Рейтинг 8,5</span>
             </p>
           </div>
 
         </div>
-        <img src="divider-6.png">
         <div class="catalog-pages">
           <ul>
-            <li>{{index}}</li>
+            <li class="page-selected">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="other-pages not-clickable">...</li>
+            <li><a href="#">10</a></li>
           </ul>
         </div>
       </section>
@@ -158,23 +163,25 @@
       <section class="subscribe-section">
         <h2>Подпишись на рассылку</h2>
         <p>Только полезная информация и никакого спама<br>Чесное бойскаутское!</p>
-        <form action="#" type="post">
-          <input type="email">
+        <form action="#">
+          <label>
+            Ваш e-mail
+            <input type="email" required>
+          </label>
           <button type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <ul>
-        <li><a href="vk.com"><img alt="vk" src="images/vk-icon.svg"></a></li>
-        <li><a href="telegram.org"><img alt="telegram" src="images/telegam-icon.svg"></a></li>
-        <li><a href="youtube.com"><img alt="youtube" src="images/youtube-icon.svg"></a></li>
+        <li><a href="http://vk.com" class="vk"></a></li>
+        <li><a href="https://web.telegram.org/" class="telegram"></a></li>
+        <li><a href="http://youtube.com" class="youtube"></a></li>
       </ul>
       <a class="phone-number-footer" href="tel:+79128121212">+7 (912) 812-12-12</a>
       <div>
-        <img src="images/htmlacademy.svg" width="170" height="70" alt="Логотип сайта команды разработки сайта">
+        <a href="https://htmlacademy.ru/"><img src="images/htmlacademy.svg" width="170" height="70" alt="Логотип сайта команды разработки сайта"></a>
       </div>
-
     </footer>
   </body>
 </html>
