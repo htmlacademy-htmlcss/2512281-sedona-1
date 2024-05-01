@@ -1,0 +1,109 @@
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+@font-face {
+  font-family: "Font";
+  src: url("font.woff2") format("woff2"),
+       url("font.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.title {
+  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700; /* если не загрузится Roboto, подменный безопасный шрифт Arial не сможет стать жирным, если не указывать это свойство */
+}
+
+.catalog-filter{
+  background-image: url("../images/catalog-back.jpg");
+  background-repeat: no-repeat;
+}
+.subscribe-section{
+  background-image: url("../images/subscribe-back.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-content{
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 565px;
+}
+.main-content>.welcome{
+  padding: 26px;
+}
+.welcome-header{
+  background-image: url("../images/divider.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  padding-top: 80px;
+}
+.nav-search{
+  background-image: url("../images/icons/search.svg");
+}
+.nav-favorite{
+  background-image: url("../images/icons/heart.svg");
+}
+#sedona-advantages .house{
+  background-image: url('../images/advantage-icon/house.svg');
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+#sedona-advantages .food{
+  background-image: url('../images/advantage-icon/food.svg');
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+#sedona-advantages .present{
+  background-image: url('../images/advantage-icon/present.svg');
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.main-footer .vk{
+  background-image: url('../images/vk-icon.svg');
+}
+.main-footer .telegram{
+  background-image: url('../images/telegam-icon.svg');
+}
+.main-footer .youtube{
+  background-image: url('../images/youtube-icon.svg');
+}
+
+/*catalog*/
+.catalog-filter{
+  background-image: url("../images/catalog-back.jpg");
+  background-repeat: no-repeat;
+}
+.catalog-filter .menu-home {
+  background-image: url("../images/home.svg") no-repeat;
+  padding-left: 40px;
+}
+.btn-view{
+  border: lightgray 1px solid;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.btn-view-list{
+  background: url(../images/view-list.svg) no-repeat;
+}
+.btn-view-card{
+  background: url(../images/view-card.svg) no-repeat;
+}
+.btn-view-list{
+  background: url(../images/view-list.svg) no-repeat;
+}
+.catalog-view-selected{
+  border: black solid 1px;
+}
