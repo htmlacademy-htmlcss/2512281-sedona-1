@@ -11,64 +11,250 @@
     overflow: hidden;
 }
 @font-face {
-  font-family: "Font";
+  font-family: "PT Sans";
   src: url("font.woff2") format("woff2"),
        url("font.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 1200px;
+  margin: auto;
+}
+p{
+  margin:0;
+}
+.button{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.brown-btn{
+  background-color:rgba(117, 97, 87, 1);
+}
+.blue-btn{
+  background-color:rgba(130, 179, 211, 1);
+}
+.gray-btn{
+  background-color: rgba(242, 242, 242, 1);
+  color: black;
+  cursor: default;
 }
 .title {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-weight: 700; /* если не загрузится Roboto, подменный безопасный шрифт Arial не сможет стать жирным, если не указывать это свойство */
 }
-
-.catalog-filter{
-  background-image: url("../images/catalog-back.jpg");
-  background-repeat: no-repeat;
+img {
+  display: block
 }
 .subscribe-section{
   background-image: url("../images/subscribe-back.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 415px;
+  color: #ffffff;
+}
+
+.subscribe-section>div{
+  padding: 96px 0 54px;
+}
+.navigation{
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+.navigation-list{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+.navigation-item{
+  padding: 20px 16px;
+}
+.navigation-list a{
+  text-decoration: none;
+  color: black;
+}
+.navigation-list a.button{
+  color: #ffffff;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+.main-header-logo {
+  padding: 0 0 6px 0;
+}
+.main{
+  text-align: center;
 }
 
 .main-content{
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  align-items: center;
-  height: 565px;
+  background-size: 100% 485px;
+  /*height: 565px;*/
 }
 .main-content>.welcome{
-  padding: 26px;
+  padding: 51px 0 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .welcome-header{
   background-image: url("../images/divider.svg");
   background-repeat: no-repeat;
-  height: 100px;
-  padding-top: 80px;
+  background-size: 100% auto;
+  height: 261px;
+  padding-top: 57px;
+}
+.welcome-header > h1{
+  /*
+  width: 620px;
+  height: 72px;*/
+  padding: 61px 0 25px;
+}
+.section-title{
+  margin: auto;
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.welcome-header>p{
+  font-size: 22px;
+  line-height: 26px;
+}
+.list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 33% 33% auto;
+  margin: 0;
+  padding: 0;
+}
+/*.advantages-list*/
+.list li
+{
+  /*grid-template-rows: 385px 385px 385px;*/
+  height: 385px;
+  align-content: center;
+}
+.list li:nth-child(odd){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.list li:nth-child(even){
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-list li.advantage-1{
+  background-color: rgba(130, 179, 211, 1);
+  color: #ffffff;
+}
+.list div{
+  width: 245px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 21px;
+}
+.list h3{
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.advantages-list hr{
+  width: 60px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.advantage-picture{
+  grid-column: span 2;
+}
+.invitation-block{
+  height: 246px;
+  align-content: center;
+}
+/*
+.invitation-block :first-child {
+  padding-bottom: 25px;
+}*/
+.suggestion-list h3{
+  background-position: top;
+  padding-top: 105px;
 }
 .nav-search{
   background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
 }
 .nav-favorite{
   background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
 }
-#sedona-advantages .house{
+.sedona-advantages .house{
   background-image: url('../images/advantage-icon/house.svg');
   background-repeat: no-repeat;
-  padding-top: 80px;
+  background-size: 72px 75px ;
+  /*padding-top: 80px;*/
 }
-#sedona-advantages .food{
+.sedona-advantages .food{
   background-image: url('../images/advantage-icon/food.svg');
   background-repeat: no-repeat;
-  padding-top: 80px;
+  background-size: 70px 74px ;
+  /*padding-top: 80px;*/
 }
-#sedona-advantages .present{
+.sedona-advantages .present{
   background-image: url('../images/advantage-icon/present.svg');
   background-repeat: no-repeat;
-  padding-top: 80px;
+  background-size: 76px 64px ;
+  /*padding-top: 80px;*/
+}
+.hotel-search-block{
+  height: 406px;
+}
+.hotel-search-block .button,
+.subscribe-section .button
+{
+  padding-inline: 50px;
+  font-size: 20px;
+}
+.hotel-search-block >div{
+  padding: 96px 0 54px;
+}
+.main-footer{
+  height: 120px;
+}
+.main-footer .navigation{
+  padding-top: 40px;
+}
+.main-footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 142px;
+  margin: 0;
+}
+.main-footer li {
+  width: 100%;
+}
+.main-footer li a{
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.phone-number-footer{
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
 }
 .main-footer .vk{
   background-image: url('../images/vk-icon.svg');
@@ -81,13 +267,77 @@ body {
 }
 
 /*catalog*/
-.catalog-filter{
+
+.catalog-header{
   background-image: url("../images/catalog-back.jpg");
   background-repeat: no-repeat;
+  color: #ffffff;
 }
-.catalog-filter .menu-home {
-  background-image: url("../images/home.svg") no-repeat;
-  padding-left: 40px;
+.catalog-header h1{
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+.catalog-header h2{
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+.catalog-header>div{
+  padding: 35px 70px 70px;
+}
+.catalog-header ul{
+  list-style: none;
+}
+.catalog-filter-header .menu-home {
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.catalog-filter-left{
+  display: flex;
+  font-size: 18px;
+}
+.catalog-sorting{
+  padding: 50px 70px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-sorting ul{
+  list-style: none;
+  display: flex;
+}
+.catalog-sorting .section-title{
+  margin: 0;
+}
+.catalog-body{
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+
+}
+.catalog-item{
+  border: rgba(230, 230, 230, 1) 1px solid;
+  border-radius: 4px;
+  padding: 20px;
+}
+.catalog-item>div{
+  margin: auto;
+}
+.catalog-item-limbs{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+}
+.catalog-item-limbs span{
+  font-size: 18px;
+}
+.catalog-item-limbs .button{
+  font-size: 16px;
 }
 .btn-view{
   border: lightgray 1px solid;
@@ -107,3 +357,18 @@ body {
 .catalog-view-selected{
   border: black solid 1px;
 }
+.catalog-item h4{
+  font-size: 24px;
+  padding: 16px 0;
+  margin: 0;
+}
+.catalog-pages ul{
+  display: flex;
+  list-style: none;
+}
+
+/* Общие правила
+Сбрасывайте браузерные стили по умолчанию.
+Задавайте текстовым элементам нижний отступ.
+Не забывайте сбрасывать отступ у последнего элемента.
+Изображениям, с помощью класса, изменяйте блочную модель */
