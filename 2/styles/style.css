@@ -1,14 +1,14 @@
 .visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @font-face {
@@ -46,11 +46,11 @@ body {
 }
 
 .brown-btn{
-  background-color:#756157;
+  background-color: #756157;
 }
 
 .blue-btn{
-  background-color:#82b2d3;
+  background-color: #82b2d3;
 }
 
 .gray-btn{
@@ -65,7 +65,9 @@ body {
 }
 
 img {
-  display: block
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .subscribe-section{
@@ -187,9 +189,20 @@ img {
   background-color: #83b3d333;
 }
 
-.advantages-list li.advantage-1{
+.advantages-list advantage-special{
   background-color: #82b3d3;
   color: #ffffff;
+}
+
+.advantage-1{
+  display: flex;
+  grid-column: span 3;
+}
+
+.list .advantage-picture{
+  margin: 0;
+  display: block;
+  width: 66.7%;
 }
 
 .list div{
@@ -208,10 +221,6 @@ img {
 .advantages-list hr{
   width: 60px;
   color: #0000004d;
-}
-
-.advantage-picture{
-  grid-column: span 2;
 }
 
 .invitation-block{
