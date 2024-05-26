@@ -38,7 +38,7 @@
     </header>
     <main class="main">
       <section class="main-content hero">
-        <img class="hero-img welcome" alt="Welcome to gorgeous Sedona" src="images/welcome.svg" width="458px" height="352px">
+        <img class="hero-img welcome" alt="Welcome to gorgeous Sedona" src="images/welcome.svg" width="458" height="352">
         <div class="welcome-header">
           <h1 class="section-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -48,13 +48,13 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list list">
           <li class="advantage-1">
-            <div>
+            <div class="advantage-special">
               <h3>Настоящий городок</h3><hr>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-          </li>
-          <li class="advantage-picture">
-            <img src="images/advantage-photo-1.jpg" width="100%" height="385px">
+            <div class="advantage-picture">
+              <img src="images/advantage-photo-1.jpg" height="385">
+            </div>
           </li>
           <li>
             <div>
@@ -64,20 +64,22 @@
           </li>
           <li>
             <div>
-            <h3>Красивая дорога</h3><hr>
-            <p>Все достопримечательности находятся очень близко</p></div>
+              <h3>Красивая дорога</h3><hr>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li>
             <div>
-            <h3>Мало туристов</h3>
-            <hr>
-            <p>Все достопримечательности находятся очень близко</p></div>
-          </li>
-          <li class="advantage-picture">
-            <img src="images/advantage-photo-2.jpg">
+              <h3>Мало туристов</h3>
+              <hr>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="advantage-1">
-            <div>
+            <div class="advantage-picture">
+              <img src="images/advantage-photo-2.jpg">
+            </div>
+            <div class="advantage-special">
               <h3>Там есть мост дьявола</h3><hr>
               <p>Да, по нему можно пройти!<br>Если вы осмелитесь, разумеется</p>
             </div>
@@ -131,39 +133,39 @@
           <h2 class="section-title">Подпишись на рассылку</h2>
           <p>Только полезная информация и никакого спама<br>Чесное бойскаутское!</p>
         </div>
-          <form action="#" type="post">
-            <label>
-              Ваш e-mail
-              <input type="email" name="email" required>
-            </label>
-            <button class="button blue-btn" type="submit">Подписаться</button>
-          </form>
+        <form action="#">
+          <label>
+            Ваш e-mail
+            <input type="email" name="email" required>
+          </label>
+          <button class="button blue-btn" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
       <nav class="navigation">
-      <ul>
-        <li><a href="http://vk.com" class="button vk"></a></li>
-        <li><a href="https://web.telegram.org/" class="button telegram"></a></li>
-        <li><a href="http://youtube.com" class="button youtube"></a></li>
-      </ul>
-      <a class="phone-number-footer" href="tel:+79128121212">+7 (912) 812-12-12</a>
-      <div>
-        <a href="https://htmlacademy.ru/">
-          <img src="images/html_academy.svg" width="115px" height="33px" alt="Логотип сайта команды разработки сайта">
-        </a>
-      </div>
+        <ul>
+          <li><a href="http://vk.com" class="button vk"></a></li>
+          <li><a href="https://web.telegram.org/" class="button telegram"></a></li>
+          <li><a href="http://youtube.com" class="button youtube"></a></li>
+        </ul>
+        <a class="phone-number-footer" href="tel:+79128121212">+7 (912) 812-12-12</a>
+        <div>
+          <a href="https://htmlacademy.ru/">
+            <img src="images/html_academy.svg" width="115" height="33" alt="Логотип сайта команды разработки сайта">
+          </a>
+        </div>
       </nav>
 
     </footer>
     <div class="registration-popup">
       <form action="#" method="post">
         <fieldset>
-        <label>Дата заезда: <input type="date" required /></label>
-        <label>Время заезда: <input type="time"/></label>
-        <label>Взрослые: <input type="number"/></label>
-        <label>Дети: <input type="number"/></label>
-      </fieldset>
+          <label>Дата заезда: <input type="date" required /></label>
+          <label>Время заезда: <input type="time"/></label>
+          <label>Взрослые: <input type="number"/></label>
+          <label>Дети: <input type="number"/></label>
+        </fieldset>
         <button type="submit">Отправить</button>
       </form>
     </div>

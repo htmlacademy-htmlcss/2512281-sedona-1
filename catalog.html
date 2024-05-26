@@ -39,45 +39,45 @@
     <main class="main-catalog-content">
       <section class="catalog-header">
         <div>
-        <div class="catalog-filter-header">
-          <h1>Гостиницы седоны</h1>
-          <p class="menu-home"> > Гостиницы</p>
+          <div class="catalog-filter-header">
+            <h1>Гостиницы седоны</h1>
+            <p class="menu-home"> > Гостиницы</p>
+          </div>
+          <div class="catalog-filter">
+            <div class="catalog-filter-left">
+              <div>
+                <h2>Инфраструктура:</h2>
+                <ul>
+                  <li><label><input type="checkbox" checked>Бассейн</label></li>
+                  <li><label><input type="checkbox" checked>Пакковка</label></li>
+                  <li><label><input type="checkbox">Wi-Fi</label></li>
+                </ul>
+              </div>
+              <div>
+                <h2>Тип жилья:</h2>
+                <ul>
+                  <li><input type="radio" checked="true">Гостиница</input></li>
+                  <li><input type="radio" >Мотель</input></li>
+                  <li><input type="radio">Апартаменты</input></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-filter-right">
+              <!--<div class="catalog-filter-price">
+                <h2>Стоимость, Р:</h2>
+                <p>
+                  <input value="0">
+                  <input value="9000">
+                </p>
+              <!- --polzunok-- ->
+              </div>-->
+              <div class="filter-buttons">
+                <button class="search-button button blue-btn" type="submit">Применить</button>
+                <button class="clear-filters-button button" type="reset">Сбросить</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter-left">
-            <div>
-              <h2>Инфраструктура:</h2>
-              <ul>
-                <li><input type="checkbox" aria-checked="true">Бассейн</input></li>
-                <li><input type="checkbox" aria-checked="true">Пакковка</input></li>
-                <li><input type="checkbox" aria-checked="false">Wi-Fi</input></li>
-              </ul>
-            </div>
-            <div>
-              <h2>Тип жилья:</h2>
-              <ul>
-                <li><input type="radio" checked="true">Гостиница</input></li>
-                <li><input type="radio" >Мотель</input></li>
-                <li><input type="radio">Апартаменты</input></li>
-              </ul>
-            </div>
-          </div>
-          <div class="catalog-filter-right">
-            <!--<div class="catalog-filter-price">
-              <h2>Стоимость, Р:</h2>
-              <p>
-                <input value="0">
-                <input value="9000">
-              </p>
-            <!- --polzunok-- ->
-            </div>-->
-            <div class="filter-buttons">
-              <button class="search-button button blue-btn" type="submit">Применить</button>
-              <button class="clear-filters-button button" type="reset">Сбросить</button>
-            </div>
-          </div>
-          </div>
-      </div>
       </section>
 
 
@@ -90,9 +90,9 @@
               <option >Сначала дорогие</option >
             </select>
             <ul>
-              <li><button type="button" class="btn-view btn-view-tab catalog-view-selected" title="Таблица" type="button"></button></li>
-              <li><button type="button" class="btn-view btn-view-card" title="Карточки" type="button"></button></li>
-              <li><button type="button" class="btn-view btn-view-list" title="Список" type="button"></button></li>
+              <li><button type="button" class="btn-view btn-view-tab catalog-view-selected" title="Таблица"></button></li>
+              <li><button type="button" class="btn-view btn-view-card" title="Карточки"></button></li>
+              <li><button type="button" class="btn-view btn-view-list" title="Список"></button></li>
             </ul>
         </div>
         <div class="catalog-body">
@@ -144,7 +144,6 @@
               <span class="button gray-btn">Рейтинг 8,5</span>
             </div>
           </div>
-
         </div>
         <div class="catalog-pages">
           <ul>
@@ -175,19 +174,18 @@
     </main>
     <footer class="main-footer">
       <nav class="navigation">
-      <ul>
-        <li><a href="http://vk.com" class="button vk"></a></li>
-        <li><a href="https://web.telegram.org/" class="button telegram"></a></li>
-        <li><a href="http://youtube.com" class="button youtube"></a></li>
-      </ul>
-      <a class="phone-number-footer" href="tel:+79128121212">+7 (912) 812-12-12</a>
-      <div>
-        <a href="https://htmlacademy.ru/">
-          <img src="images/html_academy.svg" width="115px" height="33px" alt="Логотип сайта команды разработки сайта">
-        </a>
-      </div>
+        <ul>
+          <li><a href="http://vk.com" class="button vk"></a></li>
+          <li><a href="https://web.telegram.org/" class="button telegram"></a></li>
+          <li><a href="http://youtube.com" class="button youtube"></a></li>
+        </ul>
+        <a class="phone-number-footer" href="tel:+79128121212">+7 (912) 812-12-12</a>
+        <div>
+          <a href="https://htmlacademy.ru/">
+            <img src="images/html_academy.svg" width="115px" height="33px" alt="Логотип сайта команды разработки сайта">
+          </a>
+        </div>
       </nav>
-
     </footer>
   </body>
 </html>
