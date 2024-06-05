@@ -25,16 +25,24 @@
   font-weight: 700;
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   max-width: 1200px;
+  min-width: 1020px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .button{
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -123,17 +131,19 @@ img {
   text-align: center;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-content{
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 485px;
-  /*height: 565px;*/
 }
 
 .main-content>.welcome{
   padding: 51px 0 25px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .welcome-header{
@@ -181,15 +191,16 @@ img {
   align-content: center;
 }
 
-.list li:nth-child(odd){
+.list li:nth-child(even){
   background-color: #83b3d31f;
 }
 
-.list li:nth-child(even){
+.list li:nth-child(odd){
   background-color: #83b3d333;
 }
 
-.advantages-list advantage-special{
+.advantages-list li:first-child,
+.advantages-list li:last-child{
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -375,6 +386,10 @@ img {
   justify-content: space-between;
 }
 
+.catalog-sorting select{
+  font-family: "PT Sans", sans-serif;
+}
+
 .catalog-sorting ul{
   list-style: none;
   display: flex;
@@ -390,7 +405,6 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
-
 }
 
 .catalog-item{
@@ -449,9 +463,3 @@ img {
   display: flex;
   list-style: none;
 }
-
-/* Общие правила
-Сбрасывайте браузерные стили по умолчанию.
-Задавайте текстовым элементам нижний отступ.
-Не забывайте сбрасывать отступ у последнего элемента.
-Изображениям, с помощью класса, изменяйте блочную модель */
